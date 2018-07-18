@@ -20,6 +20,7 @@ namespace Vault
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
+            this.button1.Show();
         }
     }
 }
