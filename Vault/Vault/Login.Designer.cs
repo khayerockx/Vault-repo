@@ -123,6 +123,7 @@
             this.txt_Password.ForeColor = System.Drawing.Color.Silver;
             this.txt_Password.Location = new System.Drawing.Point(6, 19);
             this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '●';
             this.txt_Password.Size = new System.Drawing.Size(237, 16);
             this.txt_Password.TabIndex = 1;
             // 
@@ -146,7 +147,7 @@
             this.btn_CloseForm.FlatAppearance.BorderSize = 0;
             this.btn_CloseForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CloseForm.ForeColor = System.Drawing.Color.White;
-            this.btn_CloseForm.Location = new System.Drawing.Point(347, 8);
+            this.btn_CloseForm.Location = new System.Drawing.Point(347, 3);
             this.btn_CloseForm.Name = "btn_CloseForm";
             this.btn_CloseForm.Size = new System.Drawing.Size(24, 23);
             this.btn_CloseForm.TabIndex = 5;
@@ -159,7 +160,7 @@
             this.btn_MinimizeForm.FlatAppearance.BorderSize = 0;
             this.btn_MinimizeForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MinimizeForm.ForeColor = System.Drawing.Color.White;
-            this.btn_MinimizeForm.Location = new System.Drawing.Point(317, 8);
+            this.btn_MinimizeForm.Location = new System.Drawing.Point(317, 3);
             this.btn_MinimizeForm.Name = "btn_MinimizeForm";
             this.btn_MinimizeForm.Size = new System.Drawing.Size(24, 23);
             this.btn_MinimizeForm.TabIndex = 6;
@@ -170,9 +171,10 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::Vault.Properties.Resources.vault_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(117, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 91);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 157);
+            this.pictureBox1.Size = new System.Drawing.Size(86, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -181,14 +183,15 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(14, 13);
+            this.label3.Location = new System.Drawing.Point(14, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 16);
+            this.label3.Size = new System.Drawing.Size(89, 16);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Vault 1.0";
+            this.label3.Text = "Login - Vault 1.0";
             // 
             // Login
             // 
+            this.AcceptButton = this.btn_Login;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(31)))));

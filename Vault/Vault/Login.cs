@@ -36,6 +36,9 @@ namespace Vault
             if(users.Select_User(txt_Username.Text, txt_Password.Text).Rows.Count!=0)
                 {
                 this.Hide();
+                Main main = new Main();
+                main.Show();
+               
             }
             else
             {
@@ -43,5 +46,6 @@ namespace Vault
             }
 
         }
+        
     }
 }
